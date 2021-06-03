@@ -31,7 +31,7 @@ export default class GifListContainer extends Component {
     }
 
     fetchGifs = (searchTerm) => {
-        const key = 'o5EOnMC93HiLG3EZAqh6lIRqIlzGWg5d'
+        const key = process.env.REACT_APP_API_KEY
         let url = `https://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=${key}&rating=g`
         fetch(url)
         .then(resp => resp.json())
