@@ -26,7 +26,7 @@ export default class GifSearch extends Component {
                 <form onSubmit={this.handleSubmit}>
                     <h3>Enter a search term:</h3>
                     <input type="text" value={this.state.searchTerm} onChange={this.handleSearch}/>
-                    <input type="submit" value="Submit"/>
+                    <input type="submit" value="Find gifs"/>
                 </form>
             </div>
         )
